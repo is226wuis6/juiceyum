@@ -71,12 +71,23 @@
     "uninstall_command": null
   },
 
-  "notepadplusplus": {
+  "notepadpp": {
     "version": "8.5.6",
     "description": "Editor de texto Notepad++",
     "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.5.6/npp.8.5.6.Installer.x64.exe",
     "silent_install_args": "/S",
     "exec_path": "C:\\Program Files\\Notepad++\\notepad++.exe",
     "uninstall_command": "\"C:\\Program Files\\Notepad++\\uninstall.exe\" /S"
+  },
+  
+  "discord": {
+    "version": "latest",
+    "description": "Discord, app de chat para gamers y comunidades",
+    "url": "https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x64",
+    "silent_install_args": "/S",
+    "exec_path": "C:\\Users\\%USERNAME%\\AppData\\Local\\Discord\\app-*/Discord.exe",
+    "uninstall_command": "C:\\Users\\%USERNAME%\\AppData\\Local\\Discord\\Update.exe --uninstall",
+    "notes": "Instalador oficial con silent mode"
   }
 }
+
