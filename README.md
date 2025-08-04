@@ -1,39 +1,32 @@
 # JuiceYum
 
-Gestor ligero de aplicaciones para Windows, que permite instalar, buscar y gestionar apps desde repositorios remotos en formato JSON.
+A lightweight application manager for Windows that allows you to install, search, and manage apps from remote JSON-based repositories.
 
 ---
 
-## Características
+## Features
 
-- Manejo de apps desde repositorios JSON remotos.
-- Instalación con opción modo silencioso.
-- Soporte para scripts de instalación personalizados.
-- Gestión de múltiples repositorios.
-- Caché local de apps para rápido acceso.
-- Comandos para listar, buscar, instalar, actualizar apps y gestionar repositorios.
-
----
-
-## Requisitos
-
-- Python 3.7 o superior  
-- Módulo [colorama](https://pypi.org/project/colorama/) (`pip install colorama`)  
-- Conexión a internet para descargar repositorios y apps
+- App management from remote JSON repositories  
+- Silent installation mode support  
+- Custom PowerShell installation script support  
+- Multiple repository management  
+- Local cache for faster access  
+- Commands to list, search, install, update apps, and manage repositories
 
 ---
 
-## Instalación
+## Requirements
 
-Clona este repositorio o descarga el archivo `juiceyum.py`:
+- Python 3.7 or higher  
+- [colorama](https://pypi.org/project/colorama/) module (`pip install colorama`)  
+- Internet connection to download repositories and applications
+
+---
+
+## Installation
+
+Clone this repository or download the `juiceyum.py` file:
 
 ```bash
-git clone https://github.com/tu-usuario/juiceyum.git
+git clone https://github.com/your-username/juiceyum.git
 cd juiceyum
-```
-
-Instala dependencias:
-
-```bash
-pip install colorama
-```
