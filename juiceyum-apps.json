@@ -1,9 +1,12 @@
 {
+  "vlc": {
+    "version": "3.0.18",
+    "url": "https://get.videolan.org/vlc/3.0.18/win64/vlc-3.0.18-win64.exe",
+    "silent_install_args": "/S"
+  },
   "demoapp": {
     "version": "0.0.1",
     "url": "https://example.com/demoapp_installer.exe",
-    "checksum": "sha256:abc123def4567890",
     "silent_install_args": "/S"
   }
 }
-
