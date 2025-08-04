@@ -7,7 +7,6 @@
     "exec_path": "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe",
     "uninstall_command": "\"C:\\Program Files\\VideoLAN\\VLC\\uninstall.exe\" /S"
   },
-
   "git": {
     "version": "2.50.1",
     "description": "Git para Windows",
@@ -16,7 +15,6 @@
     "exec_path": "C:\\Program Files\\Git\\bin\\bash.exe",
     "uninstall_command": "\"C:\\Program Files\\Git\\unins000.exe\" /SILENT"
   },
-
   "chrome": {
     "version": "latest",
     "description": "Google Chrome, navegador web",
@@ -25,7 +23,6 @@
     "exec_path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
     "uninstall_command": "\"C:\\Program Files\\Google\\Chrome\\Application\\Installer\\setup.exe\" --uninstall --silent --system-level --verbose-logging"
   },
-
   "firefox": {
     "version": "115.0",
     "description": "Mozilla Firefox, navegador web",
@@ -34,7 +31,6 @@
     "exec_path": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
     "uninstall_command": "\"C:\\Program Files\\Mozilla Firefox\\uninstall\\helper.exe\" /S"
   },
-
   "7zip": {
     "version": "22.01",
     "description": "7-Zip compresor de archivos",
@@ -43,7 +39,6 @@
     "exec_path": "C:\\Program Files\\7-Zip\\7zFM.exe",
     "uninstall_command": "\"C:\\Program Files\\7-Zip\\Uninstall.exe\" /S"
   },
-
   "vlc-nightly": {
     "version": "4.0.0",
     "description": "VLC versión nightly para pruebas",
@@ -52,7 +47,6 @@
     "exec_path": null,
     "uninstall_command": null
   },
-
   "winget": {
     "version": "latest",
     "description": "Windows Package Manager (winget)",
@@ -61,7 +55,15 @@
     "exec_path": null,
     "uninstall_command": null
   },
-
+  "brave": {
+    "version": "BRV010",
+    "description": "Navegador privado sin spyware",
+    "url": "https://laptop-updates.brave.com/download/BRV010?bitness=64",
+    "silent_install_args": "/S",
+    "exec_path": "C:\\Users\\%USERNAME%\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+    "uninstall_command": "\"C:\\Users\\%USERNAME%\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application\\Uninstall.exe\" /S",
+    "notes": "Instalador oficial con silent mode"
+  },
   "notepadpp": {
     "version": "8.5.6",
     "description": "Editor de texto Notepad++",
@@ -70,15 +72,79 @@
     "exec_path": "C:\\Program Files\\Notepad++\\notepad++.exe",
     "uninstall_command": "\"C:\\Program Files\\Notepad++\\uninstall.exe\" /S"
   },
-  
   "discord": {
     "version": "latest",
     "description": "Discord, app de chat para gamers y comunidades",
     "url": "https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x64",
     "silent_install_args": "/S",
     "exec_path": "C:\\Users\\%USERNAME%\\AppData\\Local\\Discord\\app-*/Discord.exe",
-    "uninstall_command": "C:\\Users\\%USERNAME%\\AppData\\Local\\Discord\\Update.exe --uninstall",
+    "uninstall_command": "\"C:\\Users\\%USERNAME%\\AppData\\Local\\Discord\\Update.exe\" --uninstall",
     "notes": "Instalador oficial con silent mode"
+  },
+
+  "opera": {
+    "version": "102.0.4883.88",
+    "description": "Navegador Opera rápido y seguro",
+    "url": "https://download3.operacdn.com/pub/opera/desktop/102.0.4883.88/win/Opera_102.0.4883.88_Setup_x64.exe",
+    "silent_install_args": "/silent /install",
+    "exec_path": "C:\\Program Files\\Opera\\launcher.exe",
+    "uninstall_command": "\"C:\\Program Files\\Opera\\uninstall\\helper.exe\" /S"
+  },
+  "edge": {
+    "version": "latest",
+    "description": "Microsoft Edge, navegador basado en Chromium",
+    "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/abcdefg/installer.exe",
+    "silent_install_args": "/silent /install",
+    "exec_path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "uninstall_command": "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\Installer\\setup.exe\" --uninstall --system-level --verbose-logging"
+  },
+  "vivaldi": {
+    "version": "7.8.2490.36",
+    "description": "Navegador Vivaldi personalizado y flexible",
+    "url": "https://downloads.vivaldi.com/stable/Vivaldi.7.8.2490.36.x64.exe",
+    "silent_install_args": "/silent",
+    "exec_path": "C:\\Users\\%USERNAME%\\AppData\\Local\\Vivaldi\\Application\\vivaldi.exe",
+    "uninstall_command": "\"C:\\Users\\%USERNAME%\\AppData\\Local\\Vivaldi\\Application\\Uninstall.exe\" /S"
+  },
+
+  "python": {
+    "version": "3.11.5",
+    "description": "Python 3 interpreter",
+    "url": "https://www.python.org/ftp/python/3.11.5/python-3.11.5-amd64.exe",
+    "silent_install_args": "/quiet InstallAllUsers=1 PrependPath=1",
+    "exec_path": "C:\\Program Files\\Python311\\python.exe",
+    "uninstall_command": "MsiExec.exe /X{B5B50B15-5F60-4ED2-BDD8-42687048DF23}"
+  },
+  "putty": {
+    "version": "0.78",
+    "description": "Cliente SSH y telnet PuTTY",
+    "url": "https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe",
+    "silent_install_args": "",
+    "exec_path": "C:\\Program Files\\PuTTY\\putty.exe",
+    "uninstall_command": ""
+  },
+  "google-drive": {
+    "version": "latest",
+    "description": "Google Drive Backup and Sync",
+    "url": "https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe",
+    "silent_install_args": "/silent",
+    "exec_path": "C:\\Program Files\\Google\\Drive File Stream\\GoogleDriveFS.exe",
+    "uninstall_command": ""
+  },
+  "winscp": {
+    "version": "6.1.6",
+    "description": "Cliente SFTP y FTP WinSCP",
+    "url": "https://winscp.net/download/WinSCP-6.1.6-Setup.exe",
+    "silent_install_args": "/verysilent",
+    "exec_path": "C:\\Program Files (x86)\\WinSCP\\WinSCP.exe",
+    "uninstall_command": ""
+  },
+  "visual-studio-code": {
+    "version": "1.82.1",
+    "description": "Editor de código Visual Studio Code",
+    "url": "https://update.code.visualstudio.com/latest/win32-x64-user/stable",
+    "silent_install_args": "/VERYSILENT /NORESTART",
+    "exec_path": "C:\\Users\\%USERNAME%\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+    "uninstall_command": ""
   }
 }
-
