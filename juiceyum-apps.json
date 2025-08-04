@@ -1,16 +1,82 @@
 {
   "vlc": {
     "version": "3.0.18",
-    "description": "Reproductor multimedia VLC, open source y multiplataforma",
+    "description": "Reproductor multimedia VLC",
     "url": "https://get.videolan.org/vlc/3.0.18/win64/vlc-3.0.18-win64.exe",
     "silent_install_args": "/S",
-    "exec_path": "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe"
+    "exec_path": "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe",
+    "uninstall_command": "\"C:\\Program Files\\VideoLAN\\VLC\\uninstall.exe\" /S"
   },
-  "demoapp": {
-    "version": "0.0.1",
-    "description": "Demo app para pruebas",
-    "url": "https://example.com/demoapp_installer.exe",
+
+  "roblox": {
+    "version": "latest",
+    "description": "Juego Roblox oficial",
+    "url": "https://www.roblox.com/es/download/client?os=win",
+    "silent_install_args": "/quiet",
+    "exec_path": null,
+    "uninstall_command": "wmic product where \"name like '%Roblox%'\" call uninstall /nointeractive"
+  },
+
+  "git": {
+    "version": "2.50.1",
+    "description": "Git para Windows",
+    "url": "https://github.com/git-for-windows/git/releases/download/v2.50.1.windows.1/Git-2.50.1-64-bit.exe",
+    "silent_install_args": "/SILENT",
+    "exec_path": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "uninstall_command": "\"C:\\Program Files\\Git\\unins000.exe\" /SILENT"
+  },
+
+  "chrome": {
+    "version": "latest",
+    "description": "Google Chrome, navegador web",
+    "url": "https://dl.google.com/chrome/install/latest/chrome_installer.exe",
+    "silent_install_args": "/silent /install",
+    "exec_path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "uninstall_command": "\"C:\\Program Files\\Google\\Chrome\\Application\\Installer\\setup.exe\" --uninstall --silent --system-level --verbose-logging"
+  },
+
+  "firefox": {
+    "version": "115.0",
+    "description": "Mozilla Firefox, navegador web",
+    "url": "https://download.mozilla.org/?product=firefox-latest&os=win64&lang=es-ES",
+    "silent_install_args": "-ms",
+    "exec_path": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+    "uninstall_command": "\"C:\\Program Files\\Mozilla Firefox\\uninstall\\helper.exe\" /S"
+  },
+
+  "7zip": {
+    "version": "22.01",
+    "description": "7-Zip compresor de archivos",
+    "url": "https://www.7-zip.org/a/7z2201-x64.exe",
     "silent_install_args": "/S",
-    "exec_path": null
+    "exec_path": "C:\\Program Files\\7-Zip\\7zFM.exe",
+    "uninstall_command": "\"C:\\Program Files\\7-Zip\\Uninstall.exe\" /S"
+  },
+
+  "vlc-nightly": {
+    "version": "4.0.0",
+    "description": "VLC versión nightly para pruebas",
+    "url": "https://nightlies.videolan.org/build/win64/vlc-4.0.0-git-xxxx.exe",
+    "silent_install_args": "/S",
+    "exec_path": null,
+    "uninstall_command": null
+  },
+
+  "winget": {
+    "version": "latest",
+    "description": "Windows Package Manager (winget)",
+    "url": null,
+    "install_script": "Invoke-WebRequest https://raw.githubusercontent.com/asheroto/winget-installer/master/winget-install.ps1 -UseBasicParsing | iex",
+    "exec_path": null,
+    "uninstall_command": null
+  },
+
+  "notepadplusplus": {
+    "version": "8.5.6",
+    "description": "Editor de texto Notepad++",
+    "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.5.6/npp.8.5.6.Installer.x64.exe",
+    "silent_install_args": "/S",
+    "exec_path": "C:\\Program Files\\Notepad++\\notepad++.exe",
+    "uninstall_command": "\"C:\\Program Files\\Notepad++\\uninstall.exe\" /S"
   }
 }
