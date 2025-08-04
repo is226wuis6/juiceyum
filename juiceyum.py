@@ -12,6 +12,7 @@ from colorama import init, Fore, Style
 init(autoreset=True)
 
 # --- CONSTANTES Y RUTAS ---
+VERSION = "38 - 1.0.1b"
 HOME = Path(os.getenv("APPDATA") or Path.home())
 JUICEYUM_DIR = HOME / "juiceyum"
 DEFAULT_DOWNLOADS_DIR = JUICEYUM_DIR / "downs"
@@ -128,7 +129,8 @@ def search_apps(term, apps):
         if term in name.lower() or term in app.get("description", "").lower():
             ver = app.get("version", "N/A")
             desc = app.get("description", "Sin descripción")
-            print(f"- {name} (v{ver}): {desc}")
+            location = app.get("location", "Ubicación no especificada")
+            print(f"- {name} (v{ver}): {desc} - Ubicación: {location}")
             found = True
     if not found:
         print(Fore.YELLOW + f"No se encontraron apps que coincidan con '{term}'.")
@@ -328,9 +330,19 @@ def main():
         action="store_true",
         help="Si está disponible, instala en modo silencioso"
     )
+    parser.add_argument(
+    "-v", "--version",
+    action="version",
+    version=f"{VERSION}",
+    help="Muestra la versión del programa y sale"
+    )
+
 
     # Subparsers principales
     subparsers = parser.add_subparsers(dest="command", required=True)
+
+    # Agregamos el comando refresh
+    subparsers.add_parser("refresh", help="Reinicia JuiceYum para aplicar cambios")
 
     # Grupo de comandos para apps
     apps_parser = subparsers.add_parser("apps", help="Comandos para manejar apps")
@@ -366,6 +378,11 @@ def main():
     list_parser = repo_subparsers.add_parser("list", help="Listar repositorios")
 
     args = parser.parse_args()
+
+    # Si el comando es refresh, ejecuta la función y termina
+    if args.command == "refresh":
+        refresh()
+        return
 
     # Carga o actualiza apps según comando
     if args.command == "apps" and args.apps_cmd == "update":
