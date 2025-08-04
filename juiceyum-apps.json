@@ -1,12 +1,16 @@
 {
   "vlc": {
     "version": "3.0.18",
+    "description": "Reproductor multimedia VLC, open source y multiplataforma",
     "url": "https://get.videolan.org/vlc/3.0.18/win64/vlc-3.0.18-win64.exe",
-    "silent_install_args": "/S"
+    "silent_install_args": "/S",
+    "exec_path": "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe"
   },
   "demoapp": {
     "version": "0.0.1",
+    "description": "Demo app para pruebas",
     "url": "https://example.com/demoapp_installer.exe",
-    "silent_install_args": "/S"
+    "silent_install_args": "/S",
+    "exec_path": null
   }
 }
