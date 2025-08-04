@@ -8,15 +8,6 @@
     "uninstall_command": "\"C:\\Program Files\\VideoLAN\\VLC\\uninstall.exe\" /S"
   },
 
-  "roblox": {
-    "version": "latest",
-    "description": "Juego Roblox oficial",
-    "url": "https://www.roblox.com/es/download/client?os=win",
-    "silent_install_args": "/quiet",
-    "exec_path": null,
-    "uninstall_command": "wmic product where \"name like '%Roblox%'\" call uninstall /nointeractive"
-  },
-
   "git": {
     "version": "2.50.1",
     "description": "Git para Windows",
