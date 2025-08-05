@@ -28,5 +28,5 @@ A lightweight application manager for Windows that allows you to install, search
 Clone this repository or download the `juiceyum.py` file:
 
 ```bash
-git clone https://github.com/your-username/juiceyum.git
+git clone https://github.com/is226wuis6/juiceyum.git
 cd juiceyum
