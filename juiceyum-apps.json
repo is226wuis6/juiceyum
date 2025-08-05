@@ -1,127 +1,91 @@
 {
-  "vlc": {
-    "version": "3.0.18",
-    "description": "Reproductor multimedia VLC",
-    "url": "https://get.videolan.org/vlc/3.0.18/win64/vlc-3.0.18-win64.exe",
-    "silent_install_args": "/S",
-    "exec_path": "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe",
-    "uninstall_command": "\"C:\\Program Files\\VideoLAN\\VLC\\uninstall.exe\" /S"
-  },
-  "git": {
-    "version": "2.50.1",
-    "description": "Git para Windows",
-    "url": "https://github.com/git-for-windows/git/releases/download/v2.50.1.windows.1/Git-2.50.1-64-bit.exe",
-    "silent_install_args": "/SILENT",
-    "exec_path": "C:\\Program Files\\Git\\bin\\bash.exe",
-    "uninstall_command": "\"C:\\Program Files\\Git\\unins000.exe\" /SILENT"
-  },
-  "chrome": {
-    "version": "latest",
-    "description": "Google Chrome, navegador web",
-    "url": "https://dl.google.com/chrome/install/latest/chrome_installer.exe",
-    "silent_install_args": "/silent /install",
-    "exec_path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
-    "uninstall_command": "\"C:\\Program Files\\Google\\Chrome\\Application\\Installer\\setup.exe\" --uninstall --silent --system-level --verbose-logging"
-  },
-  "firefox": {
-    "version": "115.0",
-    "description": "Mozilla Firefox, navegador web",
-    "url": "https://download.mozilla.org/?product=firefox-latest&os=win64&lang=es-ES",
-    "silent_install_args": "-ms",
-    "exec_path": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
-    "uninstall_command": "\"C:\\Program Files\\Mozilla Firefox\\uninstall\\helper.exe\" /S"
-  },
   "7zip": {
     "version": "22.01",
-    "description": "7-Zip compresor de archivos",
+    "description": "7-Zip file archiver",
     "url": "https://www.7-zip.org/a/7z2201-x64.exe",
     "silent_install_args": "/S",
     "exec_path": "C:\\Program Files\\7-Zip\\7zFM.exe",
     "uninstall_command": "\"C:\\Program Files\\7-Zip\\Uninstall.exe\" /S"
   },
-  "vlc-nightly": {
-    "version": "4.0.0",
-    "description": "VLC versión nightly para pruebas",
-    "url": "https://nightlies.videolan.org/build/win64/vlc-4.0.0-git-xxxx.exe",
-    "silent_install_args": "/S",
-    "exec_path": null,
-    "uninstall_command": null
+  "audacity": {
+    "version": "3.5.1",
+    "description": "Free and open-source audio editor",
+    "url": "https://github.com/audacity/audacity/releases/download/Audacity-3.5.1/audacity-win-3.5.1-64bit.exe",
+    "silent_install_args": "/VERYSILENT",
+    "exec_path": "C:\\Program Files\\Audacity\\audacity.exe",
+    "uninstall_command": "\"C:\\Program Files\\Audacity\\uninstall.exe\" /VERYSILENT"
   },
-  "winget": {
-    "version": "latest",
-    "description": "Windows Package Manager (winget)",
-    "url": null,
-    "install_script": "Invoke-WebRequest https://raw.githubusercontent.com/asheroto/winget-installer/master/winget-install.ps1 -UseBasicParsing | iex",
-    "exec_path": null,
-    "uninstall_command": null
+  "balenaetcher": {
+    "version": "1.18.11",
+    "description": "Burns images to SD cards and USB drives easily",
+    "url": "https://github.com/balena-io/etcher/releases/download/v1.18.11/balenaEtcher-1.18.11-x64.exe",
+    "silent_install_args": "/S",
+    "exec_path": "C:\\Program Files\\balena-etcher\\balenaEtcher.exe",
+    "uninstall_command": "\"C:\\Program Files\\balena-etcher\\Uninstall balenaEtcher.exe\" /S"
+  },
+  "blender": {
+    "version": "4.1.1",
+    "description": "3D modeling, animation and rendering suite",
+    "url": "https://ftp.nluug.nl/pub/graphics/blender/release/Blender4.1/blender-4.1.1-windows-x64.msi",
+    "silent_install_args": "/quiet",
+    "exec_path": "C:\\Program Files\\Blender Foundation\\Blender 4.1\\blender.exe",
+    "uninstall_command": "msiexec /x {D1B1B5A2-72CE-4312-B28F-ABCDEF123456} /quiet"
   },
   "brave": {
     "version": "BRV010",
-    "description": "Navegador privado sin spyware",
+    "description": "Private browser without spyware",
     "url": "https://laptop-updates.brave.com/download/BRV010?bitness=64",
     "silent_install_args": "/S",
     "exec_path": "C:\\Users\\%USERNAME%\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
-    "uninstall_command": "\"C:\\Users\\%USERNAME%\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application\\Uninstall.exe\" /S",
-    "notes": "Instalador oficial con silent mode"
+    "uninstall_command": "\"C:\\Users\\%USERNAME%\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application\\Uninstall.exe\" /S"
   },
-  "notepadpp": {
-    "version": "8.5.6",
-    "description": "Editor de texto Notepad++",
-    "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.5.6/npp.8.5.6.Installer.x64.exe",
-    "silent_install_args": "/S",
-    "exec_path": "C:\\Program Files\\Notepad++\\notepad++.exe",
-    "uninstall_command": "\"C:\\Program Files\\Notepad++\\uninstall.exe\" /S"
+  "chrome": {
+    "version": "latest",
+    "description": "Google Chrome web browser",
+    "url": "https://dl.google.com/chrome/install/latest/chrome_installer.exe",
+    "silent_install_args": "/silent /install",
+    "exec_path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "uninstall_command": "\"C:\\Program Files\\Google\\Chrome\\Application\\Installer\\setup.exe\" --uninstall --silent --system-level --verbose-logging"
   },
   "discord": {
     "version": "latest",
-    "description": "Discord, app de chat para gamers y comunidades",
+    "description": "Chat app for gamers and communities",
     "url": "https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x64",
     "silent_install_args": "/S",
     "exec_path": "C:\\Users\\%USERNAME%\\AppData\\Local\\Discord\\app-*/Discord.exe",
-    "uninstall_command": "\"C:\\Users\\%USERNAME%\\AppData\\Local\\Discord\\Update.exe\" --uninstall",
-    "notes": "Instalador oficial con silent mode"
-  },
-
-  "opera": {
-    "version": "102.0.4883.88",
-    "description": "Navegador Opera rápido y seguro",
-    "url": "https://download3.operacdn.com/pub/opera/desktop/102.0.4883.88/win/Opera_102.0.4883.88_Setup_x64.exe",
-    "silent_install_args": "/silent /install",
-    "exec_path": "C:\\Program Files\\Opera\\launcher.exe",
-    "uninstall_command": "\"C:\\Program Files\\Opera\\uninstall\\helper.exe\" /S"
+    "uninstall_command": "\"C:\\Users\\%USERNAME%\\AppData\\Local\\Discord\\Update.exe\" --uninstall"
   },
   "edge": {
     "version": "latest",
-    "description": "Microsoft Edge, navegador basado en Chromium",
+    "description": "Microsoft Edge browser based on Chromium",
     "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/abcdefg/installer.exe",
     "silent_install_args": "/silent /install",
     "exec_path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
     "uninstall_command": "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\Installer\\setup.exe\" --uninstall --system-level --verbose-logging"
   },
-  "vivaldi": {
-    "version": "7.8.2490.36",
-    "description": "Navegador Vivaldi personalizado y flexible",
-    "url": "https://downloads.vivaldi.com/stable/Vivaldi.7.8.2490.36.x64.exe",
-    "silent_install_args": "/silent",
-    "exec_path": "C:\\Users\\%USERNAME%\\AppData\\Local\\Vivaldi\\Application\\vivaldi.exe",
-    "uninstall_command": "\"C:\\Users\\%USERNAME%\\AppData\\Local\\Vivaldi\\Application\\Uninstall.exe\" /S"
+  "firefox": {
+    "version": "115.0",
+    "description": "Mozilla Firefox web browser",
+    "url": "https://download.mozilla.org/?product=firefox-latest&os=win64&lang=en-US",
+    "silent_install_args": "-ms",
+    "exec_path": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+    "uninstall_command": "\"C:\\Program Files\\Mozilla Firefox\\uninstall\\helper.exe\" /S"
   },
-
-  "python": {
-    "version": "3.11.5",
-    "description": "Python 3 interpreter",
-    "url": "https://www.python.org/ftp/python/3.11.5/python-3.11.5-amd64.exe",
-    "silent_install_args": "/quiet InstallAllUsers=1 PrependPath=1",
-    "exec_path": "C:\\Program Files\\Python311\\python.exe",
-    "uninstall_command": "MsiExec.exe /X{B5B50B15-5F60-4ED2-BDD8-42687048DF23}"
+  "gimp": {
+    "version": "2.10.36",
+    "description": "GIMP image editor similar to Photoshop",
+    "url": "https://download.gimp.org/pub/gimp/v2.10/windows/gimp-2.10.36-setup.exe",
+    "silent_install_args": "/VERYSILENT",
+    "exec_path": "C:\\Program Files\\GIMP 2\\bin\\gimp-2.10.exe",
+    "uninstall_command": "\"C:\\Program Files\\GIMP 2\\uninstall\\unins000.exe\" /VERYSILENT"
   },
-  "putty": {
-    "version": "0.78",
-    "description": "Cliente SSH y telnet PuTTY",
-    "url": "https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe",
-    "silent_install_args": "",
-    "exec_path": "C:\\Program Files\\PuTTY\\putty.exe",
-    "uninstall_command": ""
+  "git": {
+    "version": "2.50.1",
+    "description": "Git version control system",
+    "url": "https://github.com/git-for-windows/git/releases/download/v2.50.1.windows.1/Git-2.50.1-64-bit.exe",
+    "silent_install_args": "/SILENT",
+    "exec_path": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "uninstall_command": "\"C:\\Program Files\\Git\\unins000.exe\" /SILENT"
   },
   "google-drive": {
     "version": "latest",
@@ -131,20 +95,125 @@
     "exec_path": "C:\\Program Files\\Google\\Drive File Stream\\GoogleDriveFS.exe",
     "uninstall_command": ""
   },
-  "winscp": {
-    "version": "6.1.6",
-    "description": "Cliente SFTP y FTP WinSCP",
-    "url": "https://winscp.net/download/WinSCP-6.1.6-Setup.exe",
-    "silent_install_args": "/verysilent",
-    "exec_path": "C:\\Program Files (x86)\\WinSCP\\WinSCP.exe",
+  "krita": {
+    "version": "5.2.2",
+    "description": "Digital painting software Krita",
+    "url": "https://download.kde.org/stable/krita/5.2.2/krita-x64-5.2.2-setup.exe",
+    "silent_install_args": "/VERYSILENT",
+    "exec_path": "C:\\Program Files\\Krita (x64)\\bin\\krita.exe",
+    "uninstall_command": "\"C:\\Program Files\\Krita (x64)\\uninstall.exe\" /VERYSILENT"
+  },
+  "notepadpp": {
+    "version": "8.5.6",
+    "description": "Notepad++ text editor",
+    "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.5.6/npp.8.5.6.Installer.x64.exe",
+    "silent_install_args": "/S",
+    "exec_path": "C:\\Program Files\\Notepad++\\notepad++.exe",
+    "uninstall_command": "\"C:\\Program Files\\Notepad++\\uninstall.exe\" /S"
+  },
+  "obs-studio": {
+    "version": "30.1.2",
+    "description": "OBS Studio for recording and streaming",
+    "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-30.1.2-Full-Installer-x64.exe",
+    "silent_install_args": "/S",
+    "exec_path": "C:\\Program Files\\obs-studio\\bin\\64bit\\obs64.exe",
+    "uninstall_command": "\"C:\\Program Files\\obs-studio\\uninstall.exe\" /S"
+  },
+  "opera": {
+    "version": "102.0.4883.88",
+    "description": "Fast and secure Opera browser",
+    "url": "https://download3.operacdn.com/pub/opera/desktop/102.0.4883.88/win/Opera_102.0.4883.88_Setup_x64.exe",
+    "silent_install_args": "/silent /install",
+    "exec_path": "C:\\Program Files\\Opera\\launcher.exe",
+    "uninstall_command": "\"C:\\Program Files\\Opera\\uninstall\\helper.exe\" /S"
+  },
+  "putty": {
+    "version": "0.78",
+    "description": "SSH and telnet client PuTTY",
+    "url": "https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe",
+    "silent_install_args": "",
+    "exec_path": "C:\\Program Files\\PuTTY\\putty.exe",
     "uninstall_command": ""
+  },
+  "python": {
+    "version": "3.11.5",
+    "description": "Python 3 interpreter",
+    "url": "https://www.python.org/ftp/python/3.11.5/python-3.11.5-amd64.exe",
+    "silent_install_args": "/quiet InstallAllUsers=1 PrependPath=1",
+    "exec_path": "C:\\Program Files\\Python311\\python.exe",
+    "uninstall_command": "MsiExec.exe /X{B5B50B15-5F60-4ED2-BDD8-42687048DF23}"
+  },
+  "rufus": {
+    "version": "4.9.0",
+    "description": "Utility to format and create bootable USB drives",
+    "url": "https://github.com/pbatard/rufus/releases/download/v4.9/rufus-4.9.exe",
+    "silent_install_args": "",
+    "exec_path": "C:\\Users\\%USERNAME%\\AppData\\Local\\rufus\\rufus.exe",
+    "uninstall_command": ""
+  },
+  "spotify": {
+    "version": "latest",
+    "description": "Spotify music streaming client",
+    "url": "https://download.scdn.co/SpotifySetup.exe",
+    "silent_install_args": "/silent",
+    "exec_path": "C:\\Users\\%USERNAME%\\AppData\\Roaming\\Spotify\\Spotify.exe",
+    "uninstall_command": "\"C:\\Users\\%USERNAME%\\AppData\\Roaming\\Spotify\\SpotifyUninstall.exe\" /silent"
+  },
+  "steam": {
+    "version": "latest",
+    "description": "Steam gaming platform client",
+    "url": "https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe",
+    "silent_install_args": "/S",
+    "exec_path": "C:\\Program Files (x86)\\Steam\\Steam.exe",
+    "uninstall_command": "\"C:\\Program Files (x86)\\Steam\\uninstall.exe\" /S"
+  },
+  "vivaldi": {
+    "version": "7.8.2490.36",
+    "description": "Highly customizable Vivaldi browser",
+    "url": "https://downloads.vivaldi.com/stable/Vivaldi.7.8.2490.36.x64.exe",
+    "silent_install_args": "/silent",
+    "exec_path": "C:\\Users\\%USERNAME%\\AppData\\Local\\Vivaldi\\Application\\vivaldi.exe",
+    "uninstall_command": "\"C:\\Users\\%USERNAME%\\AppData\\Local\\Vivaldi\\Application\\Uninstall.exe\" /S"
   },
   "visual-studio-code": {
     "version": "1.82.1",
-    "description": "Editor de código Visual Studio Code",
+    "description": "Visual Studio Code editor",
     "url": "https://update.code.visualstudio.com/latest/win32-x64-user/stable",
     "silent_install_args": "/VERYSILENT /NORESTART",
     "exec_path": "C:\\Users\\%USERNAME%\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
     "uninstall_command": ""
+  },
+  "vlc": {
+    "version": "3.0.18",
+    "description": "VLC media player",
+    "url": "https://get.videolan.org/vlc/3.0.18/win64/vlc-3.0.18-win64.exe",
+    "silent_install_args": "/S",
+    "exec_path": "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe",
+    "uninstall_command": "\"C:\\Program Files\\VideoLAN\\VLC\\uninstall.exe\" /S"
+  },
+  "vlc-nightly": {
+    "version": "4.0.0",
+    "description": "Nightly build of VLC for testing",
+    "url": "https://nightlies.videolan.org/build/win64/vlc-4.0.0-git-xxxx.exe",
+    "silent_install_args": "/S",
+    "exec_path": null,
+    "uninstall_command": null
+  },
+  "winget": {
+    "version": "latest",
+    "description": "Windows Package Manager",
+    "url": null,
+    "install_script": "Invoke-WebRequest https://raw.githubusercontent.com/asheroto/winget-installer/master/winget-install.ps1 -UseBasicParsing | iex",
+    "exec_path": null,
+    "uninstall_command": null
+  },
+  "winscp": {
+    "version": "6.1.6",
+    "description": "WinSCP SFTP and FTP client",
+    "url": "https://winscp.net/download/WinSCP-6.1.6-Setup.exe",
+    "silent_install_args": "/verysilent",
+    "exec_path": "C:\\Program Files (x86)\\WinSCP\\WinSCP.exe",
+    "uninstall_command": ""
   }
 }
+
