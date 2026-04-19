@@ -1,5 +1,10 @@
 # JuiceYum
 
+> [!WARNING]
+> EVERY JUICEYUM CODE NOW BELONGS TO XDTEAM AND JAVASTACK, I DONT SUPPORT THIS PROJECT ANYMORE
+
+> [!INFO]
+> This tool will be coming alone XDTool to download apps
 A lightweight application manager for Windows that allows you to install, search, and manage apps from remote JSON-based repositories.
 
 ---
